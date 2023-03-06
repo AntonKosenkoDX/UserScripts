@@ -49,7 +49,7 @@
 
                     const pageIssues = (await (await fetch(request)).json())
                     .items
-                    .map(it => `${optionPressed ? "- [ ] " : ""}${it.url}\n`);
+                    .map(it => `${optionPressed ? "- [ ] " : ""}${it.html_url}\n`);
 
                     issues.push(...pageIssues);
 
